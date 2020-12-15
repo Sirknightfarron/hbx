@@ -1,28 +1,44 @@
+
+/* Color-palette I used: https://coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
+
+
+
 *{
     margin: 0px;
     padding: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+html {
+    background-color: #2B2D42;
+}
+
 body {
-    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: none;
 }
 
 #logo img {
     width: 120px;
     height: 120px;
-    background-color: whitesmoke;
-    float: left;
     
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #edf2f4;
+    border-bottom: #2b2d42ad solid 2px;
 }
 
 #navbar {
     color: #000077;
-    background-color: whitesmoke;
-    width: 70%;
     height: 70px;
-    margin-left: 120px;
-    float: inline-start;
 }
 
 #navbar ul {
@@ -41,10 +57,13 @@ body {
 }
 
 #navbar li:hover {
-    background-color: darkgrey;
+    transform: scale(2.22);
+    background-color: rgb(233, 233, 233);
 }
 
-#sidebar {
+/* Auskommentiert für bessere Übersicht
+
+    #sidebar {
     width: 120px;
     position: fixed;
     z-index: 1;
@@ -73,9 +92,36 @@ body {
 
 #sidebar li:hover {
     background-color: darkslategray;
+} */
+
+
+
+
+main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#content-mainpage{
+h2 {
+    font-size: 2em;
+    color: #D90429;
+    margin: 10px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.slider {
+    width: 600px;
+    
+}
+
+.slideshow img {
+    width: 100%;
+    object-fit: scale-down;
+}
+
+/* #content-mainpage{
     width: 70%;
     height: 25em;
     margin-top: 5px;
@@ -88,7 +134,7 @@ body {
 
 #content-mainpage p {
     margin: 5px;
-}
+} */
 
 footer {
     float: bottom;

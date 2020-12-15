@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>hbx</title>
-        <link rel="stylesheet" type="text/css" href="style/style.css">
-        <script src="https://unpkg.com/vue@next"></script>
-        <script src="script/main.js"></script>
-    </head>
 
-    <body>
-        <!--Der Navbar oben auf der Seite--> 
+<head>
+    <meta charset="utf-8">
+    <title>hbx</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script/main.js"></script>
+</head>
 
+<body>
+    <!--Der Navbar oben auf der Seite-->
+    <header class="nav-header">
         <div id="logo">
-            <!--Das ist natürlich das Falsche Logo, aber da muss ich nochmal nachfragen, wo wir das original herbekommen, oder wir machen uns ein neues-->
+            <!--Das ist natürlich das Falsche Logo, aber da muss ich nochmal nachfragen, wo wir das original herbekommen, oder wir machen uns ein neues
+            Jesse - (Werde das mal bei Photoshop bearbeiten)-->
             <img src="images/Logo_Hintergrund_transparent.png" alt="images/Logo_Hintergrund_transparent_zweifarbig.png">
         </div>
         <!--Erstmal schauen, wie das auf Deutsch und wie das auf Englisch aussieht und welche Worte man benutzen kann/sollte-->
         <nav id="navbar">
             <ul>
-                <li>Home</li>
-                <li>Bulletin</li>
-                <li>Exchange</li>
-                <li>About</li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="bulletin.html">Bulletin</a></li>
+                <li><a href="exchange.html">Exchange</a></li>
+                <li><a href="About">About</a></li>
             </ul>
         </nav>
+    </header>
 
-        <!--Die Sidebar, redundant aber vielleicht als option für mobile vs. desktop webpage-->
-        <div id="sidebar">
-            <ul>
-                <li>Home</li>
-                <li>Anschlagtafel</li>
-                <li>Tauschbörse</li>
-                <li>Infos</li>
-                <li>Heimrat</li>
-                <li>Über</li>
-            </ul>
-        </div>
 
-        <!--Da wo nachher der Inhalt mit den Slideshows und so weiter hin kommen soll-->
-        <div id="content-mainpage">
-                <p>Gekröse und Gedöns</p>
-        </div>
+    <!--Die Sidebar, redundant aber vielleicht als option für mobile vs. desktop webpage (Jesse - erstmal auskommentiert)-->
+    <!-- <div id="sidebar">
+        <ul>
+            <li>Home</li>
+            <li>Anschlagtafel</li>
+            <li>Tauschbörse</li>
+            <li>Infos</li>
+            <li>Heimrat</li>
+            <li>Über</li>
+        </ul>
+    </div> -->
 
-        <footer>
-            <p>Author: Jesse, Master Of Coin; Marvin SirKnightFarron</p>
-            <p><a href="#mailto:marvtrimpop@gmail.com">Mailto Marv</a></p>
-            <p><a href="#mailto:"></a>Mailto Jesse</p>
-        </footer>
+    <!--Da wo nachher der Inhalt mit den Slideshows und so weiter hin kommen soll-->
+    <main id="content-mainpage">
+        <section class="slideshow">
+            <h2>Neues aus dem Wohnheim</h2>
+            <div class="slider">
+                <img src="images/MainSlidepagePlaceholder.jpg" alt="slideshow">
+            </div>
+        </section>
 
-    </body>
+
+    </main>
+
+    <footer>
+        <p>Author: Jesse, Master Of Coin; Marvin SirKnightFarron</p>
+        <p><a href="#mailto:marvtrimpop@gmail.com">Mailto Marv</a></p>
+        <p><a href="#mailto:"></a>Mailto Jesse</p>
+    </footer>
+
+</body>
+
 </html>
