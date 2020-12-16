@@ -47,7 +47,7 @@ a {
     margin: 5px 0 10px 0;
     list-style: none;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     padding-top: 20px;
 }
 
@@ -160,8 +160,9 @@ footer {
     color: #000044;
 }
 
-@media (max-width: 690px){
-    .nav-header{
+@media (max-width: 760px){
+    .nav-header {
+        /* background-color: black; Debugging: Media Query wird manchmal nicht aktiviert -.-*/
         flex-flow: column;
     }
 }
